@@ -4,5 +4,7 @@ NIM: 2409116061
 Kelas: B
 
 # Flowchart
-![minpro_2 drawio](https://github.com/user-attachments/assets/1e960bb5-3640-4103-9bf3-6eb10db2b47a)
+
+
+![minpro_2 drawio](https://github.com/user-attachments/assets/8f486c02-cd8b-4af0-94ac-af8708563b8e)
 
