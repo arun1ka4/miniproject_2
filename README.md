@@ -45,11 +45,17 @@ Data yang dimasukkan akan ditambahkan ke tabel
 
 Jika admin memilih "y", maka admin dapat menambahkan kembali orang dan datanya
 
-
 ![minpro2 penambahan3](https://github.com/user-attachments/assets/26314a31-481a-40d4-931a-ce38b0d30577)
 
 
 Jika admin memilih "n", maka admin akan kembali ke menu awal
+
+![minpro2 penambahan3](https://github.com/user-attachments/assets/b531bc34-6da1-4197-bed5-af416e58b8aa)
+
+
+Jika admin salah menginput, maka akan terjadi pengulangan hingga inputan sesuai pilihan
+
+![minpro2 penambahan4](https://github.com/user-attachments/assets/949a0f74-c0dc-45ce-bdc7-09bf74d86281)
 
 
 # **Pilih Menu == 2: Lihat tabel data**
@@ -58,23 +64,24 @@ Jika admin memilih "n", maka admin akan kembali ke menu awal
 
 Admin dapat melihat tabel data tersebut lalu otomatis kembali ke menu awal
 
-![minpro2 ubah2](https://github.com/user-attachments/assets/3c25cead-4747-4f2b-8314-94cab11cdf5e)
-
-
 # **Pilih Menu == 3: Ubah Data Orang**
 
 - Before
 
-![minpro2 ubah1](https://github.com/user-attachments/assets/4626c698-ad08-431c-8e56-9098b97050a7)
+![minpro2 ubah1](https://github.com/user-attachments/assets/94263347-c136-44c8-872f-783e71047588)
 
 Admin dapat memilih nomor orang yang datanya ingin diubah.
-Disini admin memilih nomor 2
+Disini admin memilih nomor 2, yaitu nama 
+
+Admin dapat meengubah data apapun, di sini saya ambil contoh mengubah nama
+
+![minpro2 ubah3](https://github.com/user-attachments/assets/c9540789-c6ea-4710-90a9-7a17c6f981aa)
+
 
 - After
 
-![minpro2 ubah2](https://github.com/user-attachments/assets/1026887e-d4ed-451b-b281-0fa6b9b285e4)
+![minpro2 ubah2](https://github.com/user-attachments/assets/ab258392-af5e-48ef-a5e3-c4eb6dfb6d34)
 
-Di sini saya ambil contoh mengubah salah satu nama orang dari data tersebut
 
 # **Pilih Menu == 1: Hapus orang dari tabel data**
 
