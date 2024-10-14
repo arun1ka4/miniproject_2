@@ -19,9 +19,9 @@ def tambah_orang(nama_orang, usia_orang, jenis_kelamin, keterampilan_diri, tarif
 
 # Tampilan awal
 def sapa():
-    print("===========================")
-    print("Selamat Datang di Sewa Sewi")
-    print("===========================")
+    print("=================================")
+    print("Selamat Datang di Sewa Jasa Orang")
+    print("=================================")
 
 # Fitur login
 def login():
@@ -110,14 +110,15 @@ def tambah_daftar_orang():
         print("\nSetelah penambahan:")
         print(table)
 
-        print("Apakah anda ingin menambah orang lagi? (y/n)")
-        jawaban = input()
-        if jawaban == "y":
-            continue
-        elif jawaban == "n":
-            break
-        else:
-            print("Salah input, hanya bisa ketik y/n")
+        while True:
+            print("Apakah anda ingin menambah orang lagi? (y/n)")
+            jawaban = input()
+            if jawaban == "y":
+                break
+            elif jawaban == "n":
+                return 
+            else:
+                print("Salah input, hanya bisa ketik y/n")
 
 # Fitur untuk melihat daftar orang yang tersedia
 def lihat_orang_yang_tersedia():
