@@ -14,14 +14,11 @@ Kelas: B
 
 ![minpro2 login](https://github.com/user-attachments/assets/89b5b937-05f2-4e79-b8eb-e7e8dc960356)
 
-# ****Penjelasan sistem login****
 Pengguna harus menginput nama dan NIM dengan benar. Jika salah menginput, maka program akan melakukan pengulangan hingga keduanya benar
 
 # **Pemilihan Role**
 
 ![minpro2 pilih role](https://github.com/user-attachments/assets/eb5a4f7a-c526-4436-8cc8-c8687b6fc8c2)
-
-# ****Penjelasan Pemilihan Role****
 
 Pengguna dapat memilih role yang diinginkan. Jika pengguna salah dalam menginput pilihan, maka program akan pengulangan hingga pengguna menginput diantara dua pilihan dengan benar
 
@@ -60,7 +57,8 @@ Jika admin salah menginput, maka akan terjadi pengulangan hingga inputan sesuai 
 
 # **Pilih Menu == 2: Lihat tabel data**
 
-![minpro2 ubah1](https://github.com/user-attachments/assets/216f95f5-71a8-40b4-8074-a5163735b503)
+![minpro2 lihat tabel](https://github.com/user-attachments/assets/dc7ca9f5-b797-42c7-987a-9d9c5ebc5fa0)
+
 
 Admin dapat melihat tabel data tersebut lalu otomatis kembali ke menu awal
 
