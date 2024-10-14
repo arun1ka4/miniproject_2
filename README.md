@@ -81,7 +81,7 @@ Admin dapat meengubah data apapun, di sini saya ambil contoh mengubah nama
 
 Terlihat pada tabel nomor 2, namanya sudah berubah mejadi nana
 
-# **Pilih Menu == 1: Hapus orang dari tabel data**
+# **Pilih Menu == 4: Hapus orang dari tabel data**
 
 - Before
 
