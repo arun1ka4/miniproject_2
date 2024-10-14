@@ -57,8 +57,7 @@ Jika admin salah menginput, maka akan terjadi pengulangan hingga inputan sesuai 
 
 # **Pilih Menu == 2: Lihat tabel data**
 
-![minpro2 lihat tabel](https://github.com/user-attachments/assets/dc7ca9f5-b797-42c7-987a-9d9c5ebc5fa0)
-
+![minpro2 lihat tabel](https://github.com/user-attachments/assets/95678cc0-6f83-4c97-b87b-7b876bae991d)
 
 Admin dapat melihat tabel data tersebut lalu otomatis kembali ke menu awal
 
