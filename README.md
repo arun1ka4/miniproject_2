@@ -98,9 +98,21 @@ Admin dapat meengubah data apapun, di sini saya ambil contoh mengubah nama
 
 # **Pilih Role == 2: User**
 
--Jika admin
+Ini adalah tampilan user, di sini user dapat memilih salah satu orang dengan input nomor
 
-![minpro2 user1](https://github.com/user-attachments/assets/144fa9df-1851-4335-88a4-3d2be08907a0)
+![minpro2 user3](https://github.com/user-attachments/assets/dce60909-cdd9-425c-9bad-274627221a4c)
 
 
-![minpro2 user2](https://github.com/user-attachments/assets/5d086394-ea51-4a9b-a90c-a3d65d566952)
+Di sini saya input nomor 1
+Ada perhitungannya dengan cara menginput lamanya orang tersebut disewa dalam satuan jam
+
+Saya juga menginput "y" untuk mengakhiri program
+
+![minpro2 user1](https://github.com/user-attachments/assets/8105b44c-858c-40e1-a4a4-f11327ad0d0a)
+
+
+Jika saya memilih "n", maka program akan menanyakan kembali pilihan pengguna
+
+![minpro2 user4](https://github.com/user-attachments/assets/251c3c99-9365-4e08-960c-96eff9d9c9c0)
+
+
