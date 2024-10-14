@@ -1,7 +1,11 @@
 # miniproject_2
 Nama: Nayla Lelyanggraheni Hutomo
+
 NIM: 2409116061
+
 Kelas: B
+
+Tema: Jasa Rental Orang
 
 # Flowchart
 
