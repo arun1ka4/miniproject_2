@@ -37,7 +37,8 @@ Ini adalah tampilan menu jika anda memilih menjadi admin. Admin dapat memilih sa
 ![minpro2 penambahan1](https://github.com/user-attachments/assets/c3af64e8-3cf9-4d60-8d7b-679ef02451da)
 
 
-Admin dapat menambahkan orang tersebut dengan cara menginput data yang diperlukan.
+Admin dapat menambahkan orang baru dengan mengisi biodata seperti nama, usia, jenis kelamin, keterampilan, tarif per jam, dan status.
+Data yang dimasukkan akan ditambahkan ke tabel 
 
 
 ![minpro2 penambahan2](https://github.com/user-attachments/assets/dcfb04e0-c834-4488-9216-e83196b5eb65)
@@ -62,11 +63,14 @@ Admin dapat melihat tabel data tersebut lalu otomatis kembali ke menu awal
 
 # **Pilih Menu == 3: Ubah Data Orang**
 
+- Before
 
 ![minpro2 ubah1](https://github.com/user-attachments/assets/4626c698-ad08-431c-8e56-9098b97050a7)
 
-Admin dapat mengubah salah satu data orang dipilih, admin juga bisa mengubahnya berkali-kali
+Admin dapat memilih nomor orang yang datanya ingin diubah.
+Disini admin memilih nomor 2
 
+- After
 
 ![minpro2 ubah2](https://github.com/user-attachments/assets/1026887e-d4ed-451b-b281-0fa6b9b285e4)
 
@@ -74,13 +78,20 @@ Di sini saya ambil contoh mengubah salah satu nama orang dari data tersebut
 
 # **Pilih Menu == 1: Hapus orang dari tabel data**
 
+- Before
 
-![minpro2 hapus1](https://github.com/user-attachments/assets/eb13e337-0777-42bf-ae90-d71cf5ef2e8a)
+![minpro2 hapus1](https://github.com/user-attachments/assets/ed44a378-70fb-4f69-8071-39acd08d1dd7)
 
-Admin dapat menghapus data orang yang tidak terpakai. Hal itu dapat terjadi karena kemungkinan orang tersebut berhenti atau hal lain
+- After
+
+![minpro2 hapus2](https://github.com/user-attachments/assets/aeac41b3-a104-40b7-b5ba-812b6aad013f)
+
+
+
 
 # **Pilih Role == 2: User**
 
+-Jika admin
 
 ![minpro2 user1](https://github.com/user-attachments/assets/144fa9df-1851-4335-88a4-3d2be08907a0)
 
