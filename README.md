@@ -79,6 +79,7 @@ Admin dapat meengubah data apapun, di sini saya ambil contoh mengubah nama
 
 ![minpro2 ubah2](https://github.com/user-attachments/assets/ab258392-af5e-48ef-a5e3-c4eb6dfb6d34)
 
+Terlihat pada tabel nomor 2, namanya sudah berubah mejadi nana
 
 # **Pilih Menu == 1: Hapus orang dari tabel data**
 
@@ -86,12 +87,26 @@ Admin dapat meengubah data apapun, di sini saya ambil contoh mengubah nama
 
 ![minpro2 hapus1](https://github.com/user-attachments/assets/ed44a378-70fb-4f69-8071-39acd08d1dd7)
 
+Sebelum menghapus, program meminta konfirmasi dari admin. Jika admin memilih untuk menghapus, orang tersebut dihapus dari tabel.
+
 - After
 
 ![minpro2 hapus2](https://github.com/user-attachments/assets/aeac41b3-a104-40b7-b5ba-812b6aad013f)
 
+Admin diberi pilihan untuk menghapus orang lain atau kembali ke menu admin.
 
+# **Pilih Menu == 5: Keluar**
 
+- pilih role
+![minpro2 keluar1](https://github.com/user-attachments/assets/ddec5aea-a43b-4aab-884e-9d3107421ec0)
+
+Jika memilih pilih role, maka pengguna dapat memilih kembali role yang diinginkan
+
+- selesai
+
+![minpro2 keluar2](https://github.com/user-attachments/assets/ba491020-5e42-474e-9449-d890735262c5)
+  
+Jika memilih selesai, maka program berakhir
 
 # **Pilih Role == 2: User**
 
