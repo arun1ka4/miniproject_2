@@ -1,0 +1,253 @@
+from prettytable import PrettyTable
+import sys
+
+table = PrettyTable()
+
+table.field_names = (["No.", "Nama Orang", "Usia", "Jenis Kelamin", "Keterampilan", "Tarif per Jam", "Status"])
+
+# Data orang yang sebelumnya tersimpan
+def daftar_orang():
+    table.add_row(["1", "Yudi", "18", "Laki - laki", "Menyapu lantai", 40000, "aktif"])
+    table.add_row(["2", "Angel", "25", "Perempuan", "Menjaga anabul", 50000, "aktif"])
+    table.add_row(["3", "Okarun", "17", "Laki-laki", "Menjaga sawah", 30000, "istirahat"])
+    table.add_row(["4", "Momo", "25", "Perempuan", "Menjadi teman nge-date", 100000, "aktif"])
+
+# Fitur untuk menambah orang
+def tambah_orang(nama_orang, usia_orang, jenis_kelamin, keterampilan_diri, tarif_per_jam, status_orang):
+    no_data = len(table.rows) + 1  
+    table.add_row([no_data, nama_orang, usia_orang, jenis_kelamin, keterampilan_diri, tarif_per_jam, status_orang])
+
+# Tampilan awal
+def sapa():
+    print("===========================")
+    print("Selamat Datang di Sewa Sewi")
+    print("===========================")
+
+# Fitur login
+def login():
+    while True:
+        nama_saya = "Nayla Lelyanggraheni Hutomo"
+        nama_saya1 = "Nayla"
+        NIM_saya = "2409116061"
+        nama = str(input("\nNama Lengkap: ")).title()
+        NIM = str(input("NIM: ")).strip()
+                
+
+        if (nama == nama_saya or nama == nama_saya1) and NIM == NIM_saya:
+            pilih_role(nama)
+        elif (nama != nama_saya or nama != nama_saya1) and NIM == NIM_saya:
+            print("Anda salah memasukkan nama")
+        elif (nama == nama_saya or nama == nama_saya1) and NIM != NIM_saya:
+            print("Anda salah memasukkan NIM")
+        else:
+            print("Anda salah memasukkan nama dan NIM")
+
+# Fitur untuk memilih role
+def pilih_role(nama):
+    print(f"\nHalo {nama}, silahkan pilih role anda")
+    print("1. Admin")
+    print("2. User")
+    pilih_role = int(input("pilihan 1 - 2: "))
+    if pilih_role == 1:
+        tampilan_admin(nama)
+    elif pilih_role == 2:
+        tampilan_user()
+    else:
+        print("Anda salah memasukkan pilihan, silahkan coba lagi")
+
+# Tampilan untuk admin
+def tampilan_admin(nama):
+    while True:
+        print("\n--- Anda telah menjadi Admin ---")
+        print("1. Tambah daftar orang")
+        print("2. Lihat orang yang tersedia")
+        print("3. Perbarui data")
+        print("4. Hapus orang dari daftar")
+        print("5. Keluar")
+        pilih_menu_admin = int(input("Pilih 1 - 5:  "))
+
+        try:
+            if pilih_menu_admin == 1:
+                tambah_daftar_orang()
+            elif pilih_menu_admin == 2:
+                lihat_orang_yang_tersedia()
+            elif pilih_menu_admin == 3:
+                edit_daftar()
+            elif pilih_menu_admin == 4:
+                hapus_orang_dari_daftar()
+            elif pilih_menu_admin == 5:
+                print("Keluar dari menu admin atau selesai?")
+                print("1. Pilih role")
+                print("2. Selesai")
+                pilih_keluar = input("Pilih(1/2): ")
+                if pilih_keluar == "1":
+                    pilih_role(nama)
+                    return
+                elif pilih_keluar == "2":
+                    print(f"Terima kasih telah mencoba program saya")
+                    sys.exit()
+            else:
+                print("Anda salah memasukkan pilihan, silahkan coba lagi")
+
+        except ValueError:
+            print("Anda salah memasukkan pilihan")
+
+# Fitur untuk menambah orang baru
+def tambah_daftar_orang():
+    while True:
+        print("")
+        print("="*5 + "Isi Biodata Pendaftar" + "="*5)
+        nama_orang = str(input("Nama Orang: "))
+        usia_orang = str(input("Usia: "))
+        jenis_kelamin = str(input("Jenis kelamin: "))
+        keterampilan_diri = str(input("Keterampilan: "))
+        tarif_per_jam = int(input("tarif per jam: "))
+        status_orang = str(input("Status: "))
+
+        no_data = len(table.rows) + 1  
+        table.add_row([no_data, nama_orang, usia_orang, jenis_kelamin, keterampilan_diri, tarif_per_jam, status_orang])
+
+        print("\nSetelah penambahan:")
+        print(table)
+
+        print("Apakah anda ingin menambah orang lagi? (y/n)")
+        jawaban = input()
+        if jawaban == "y":
+            continue
+        elif jawaban == "n":
+            break
+        else:
+            print("Salah input, hanya bisa ketik y/n")
+
+# Fitur untuk melihat daftar orang yang tersedia
+def lihat_orang_yang_tersedia():
+    print(table)
+
+# Fitur untuk mengedit data orang
+def edit_daftar():
+    lihat_orang_yang_tersedia()
+    while True:
+        try:
+            nomor_orang = int(input("\nMasukkan nomor orang yang datanya ingin diubah: ")) - 1
+            if 0 <= nomor_orang < len(table.rows):
+
+                print("\nApa yang ingin Anda ubah?")
+                print("1. Nama")
+                print("2. Usia")
+                print("3. Keterampilan")
+                print("4. Tarif per Jam")
+                print("6. Status")
+                print("7. Keluar")
+                pilihan_edit = int(input("Pilih 1 - 6: "))
+
+                if pilihan_edit == 1:
+                    nama_baru = input("Masukkan nama baru: ")
+                    table.rows[nomor_orang][1] = nama_baru
+                elif pilihan_edit == 2:
+                    usia_baru = input("Masukkan usia baru: ")
+                    table.rows[nomor_orang][2] = usia_baru
+                elif pilihan_edit == 4:
+                    keterampilan_baru = input("Masukkan keterampilan baru: ")
+                    table.rows[nomor_orang][4] = keterampilan_baru
+                elif pilihan_edit == 5:
+                    tarif_baru = int(input("Masukkan tarif per jam baru: "))
+                    table.rows[nomor_orang][5] = tarif_baru
+                elif pilihan_edit == 6:
+                    status_baru = input("Masukkan status(y/n): ")
+
+                    def pilihan_user():
+                        while True:
+                            if status_baru.lower() == "y":
+                                y = "Aktif"
+                                table.rows[nomor_orang][6] = status_baru
+                                break
+                            elif status_baru.lower() == "n":
+                                n = "Istirahat"
+                                table.rows[nomor_orang][6] = status_baru
+                                break
+                            else:
+                                print("Pilih sesuai pilihan(y/n)")
+                                pilihan_user()
+                    
+                elif pilihan_edit == 7:
+                    tampilan_admin()
+                else:
+                    print("Pilihan tidak valid!")
+                    continue
+
+                print("\nData telah diperbarui:")
+                print(table)
+                break
+            else:
+                print("Nomor tidak valid!")
+        except ValueError:
+            print("Input harus berupa angka!")
+
+# Fitur untuk menghapus data orang
+def hapus_orang_dari_daftar():
+    while True:
+        print(table)
+        hapus_orang = input("\nMasukkan Nomor orang yang ingin dihapus: ").lower()
+        if hapus_orang == "exit":
+            break
+
+        pilihan_ulang = input("Apakah anda yakin ingin menghapus? (y/n): ").lower()
+
+        if pilihan_ulang == "y":
+            hapus = int(hapus_orang) - 1
+            if 0 <= hapus < len(table.rows):
+                table.del_row(hapus)
+                print("\nData berhasil dihapus.")
+                print(table)
+            else:
+                print("Jawaban anda tidak valid!")
+        elif pilihan_ulang == "n":
+            break
+        else:
+            print("Pilihan tidak valid! Silakan masukkan 'y' atau 'n'.")
+
+        pilihan_ulang = input("\n Apakah anda ingin menghapus lagi? (y/n)")
+        if pilihan_ulang == "y":
+            continue
+        elif pilihan_ulang == "n":
+            break
+        else:
+            print("Pilihan tidak valid! Silakan masukkan 'y' atau 'n'.")
+
+# Tampilan untuk user
+def tampilan_user():
+    print("\n--- Selamat datang pelanggan terhormat ---")
+    nama_user = input("Sebutkan nama anda: ")
+    print(table)
+    pilihan_user(nama_user)
+
+# Fitur untuk memilih orang dan menghitung total biaya
+def pilihan_user(nama_user):
+    while True:
+        try:
+            baris = int(input("\nSilahkan pilih orang yang anda butuhkan: ")) - 1
+            if 0 <= baris < len(table.rows):
+
+                total_jam = int(input("Berapa lama(per jam): "))
+                tarif_per_jam = int(table.rows[baris][5])
+                total_harga = total_jam * tarif_per_jam
+
+                print(f"Total harga untuk {total_jam} jam: {total_harga}")
+
+                pilihan_orang = input("\nApakah anda yakin memilih ini? (y/n): ").lower()
+                if pilihan_orang == "y":
+                    print(f"Terima kasih {nama_user}, semoga anda puas dengan layanan kami")
+                    sys.exit()
+                elif pilihan_orang == "n":
+                    pilihan_user(nama_user)
+                else:
+                    print("Pilihan tidak valid! Silahkan mengetik 'y' atau 'n' ")
+            else:
+                print("Nomor tidak valid!")
+        except ValueError:
+            print("Input harus berupa huruf, silahkan coba lagi")
+
+# Memanggil program awal
+sapa()
+daftar_orang() 
+login()
